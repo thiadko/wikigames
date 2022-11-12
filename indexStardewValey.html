@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Wiki games</title>
+<style>
+   
+*{
+    margin:0;
+    padding:0;
+}
+#check{
+    display: none;
+}
+#icone{
+    cursor: pointer;
+    padding:15px;
+    position:absolute;
+    z-index: 1;
+}
+.barra{
+    background-color: #333;
+    height: 100%;
+    width: 300px;
+    position: absolute;
+    transition:all .2s linear ;
+    left: -300px;
+}
+nav{
+    width: 100%;
+    position: absolute;
+    top: 60px;
+}
+    nav a{
+        text-decoration: none;
+    }
+    .link{
+        background-color: #494950;
+        padding:20px;
+        font-family: 'Arial';
+        font-size: 12pt;
+        transition: all .2s linear;
+        color:#f4f4f9;
+        border-bottom: 2px solid #222;
+        opacity: 0;
+        margin-top:200px ;
+    }
+    .link:hover{
+        background-color: #050542;
+    }
+    #check:checked ~ .barra{
+        transform:translateX(300px)
+    }
+    #check:checked ~ .barra nav a .link{
+       opacity: 1;
+       margin-top: 0;
+       transition-delay: .2s;
+    }
+
+    body{
+    background-image: url(backStardew.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+    padding: 1.5%;
+    
+    }
+    #main{
+        background: rgba(252, 250, 250, 0.70) ;width:100%;;
+    }
+</style>
+
+
+</head>
+<!--inicio da side-bar-->
+<body>
+    <div class="w3-container ">
+    <input type="checkbox" id="check">
+    <label id="icone" for="check"><img src="bars.png"></label>
+    <div class="barra">
+        <nav>
+            <a href="#sobre"><div class="link">sobre</div></a>
+            <a href="#informações"><div class="link">informações</div></a>
+            <a href="#personagens"><div class="link">personagens</div></a>
+            <a href="#locais"><div class="link">locais</div></a>
+            <a href="#inimigos"><div class="link">Inimigos</div></a>
+        </nav>
+    </div>
+    <!--fim da side-bar-->
+    <!--logo-->
+<img style="width:20% ;height:40%;margin-top:0; padding-left: 30px;" src="logoStardew.png" alt="">
+<!--logo-->
+</div>
+<main id="main">
+    
+    <h1 class="w3-center">Stadew Valley</h1>
+    <!--primeira imagem-->
+    <center><img class=""style="border: 0.75px solid green;" src="stardewValley.png" alt=""></center>
+    <div class="w3-panel w3-border-top w3-border-bottom w3-border-black">
+        <!--inicio do sobre-->
+        <h3 id="sobre"class="w3-serif"style="text-shadow:1px 1px 0 #444 ; font-size:40px">sobre:</h3>
+
+        <div class="w3-half w3-row"><h3>Stardew Valley é um RPG sem fim da vida no campo! Você herdou a antiga fazenda de seu avô no Vale do Orvalho. Equipado com ferramentas de segunda mão e algumas moedas, você irá começar sua nova vida. Será que você consegue aprender a viver da terra e transformar esses campos absurdamente vegetados em uma casa próspera? Não vai ser fácil. Desde que Corporação Joja veio à cidade, os antigos modos de vida quase desapareceram. O Centro Comunitário, uma vez o lugar mais visitado da cidade, agora está em ruínas. Mas o vale parece cheio de oportunidades. Com um pouco de dedicação, você pode ser a pessoa que restaurará a grandeza do Vale do Orvalho!</h3></div>
+        <div class="w3-half w3-row"><center><img src="vacalo.png" alt=""></center></div>
+        <h1>.</h1>
+        <h1>.</h1>
+          <!--fim do sobre-->
+          <!--inicio das informações-->
+          <h3 id="informações"class="w3-serif"style="text-shadow:1px 1px 0 #444 ; font-size:40px">informações:</h3>
+        
+          <table class="w3-table-all">
+            <tr>
+              <th style="background-color: green;width:33%">Ano de lançamento</th>
+              <th style="background-color: green;width:33%">Genero</th>
+              <th style="background-color: green;width:33%">Plataformas</th>
+            </tr>
+            <tr>
+              <td>26 de fevereiro de 2016</td>
+              <td>Simulação</td>
+              <td >Xbox One</td>
+              
+            </tr>
+            <tr>
+                <td></td>
+                <td>RPG</td>
+                <td>Computador</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Single Player</td>
+                <td>PlayStation 4</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Multiplayer</td>
+                <td>Nintendo Switch</td>
+            </tr>
+            
+            </table>
+            <!--fim das informaçoes-->
+            <!--inicio dos personagens -->
+            <h3 id="personagens"class="w3-serif"style="text-shadow:1px 1px 0 #444 ; font-size:40px">Personagens:</h3>
+            <h2>Krobus:</h2>
+            <div class="w3-half w3-row"style="width:25%"><img src="Krobus.png" alt=""></div>
+            <div class="w3-half w3-row"tyle="width:75%">Krobus é o único monstro amigável que os jogadores vão encontrar. Ele é um Bruto das sombras que vive no esgoto, porque ele é muito sensível à luz do sol para sair durante o dia. Ele vende uma variedade de bens raros. Ele também está disponível como colega de quarto.</div>
+            <h1>.</h1>
+            <h1>.</h1>
+            <h2>Anão:</h2>
+            <div class="w3-half w3-row"style="width:25%"><img src="anaoStardew.png" alt=""></div>
+            <div class="w3-half w3-row"tyle="width:75%">O Anão é um aldeão da vila que mora nas minas. Inicialmente o caminho é bloqueado por uma rocha inquebrável, logo dentro da entrada. Depois de atualizar para uma picareta de aço, a pedra pode ser quebrada. Uma Bombinha também funciona.</div>
+            <h1>.</h1>
+            <h1>.</h1>
+            <h2>Maru:</h2>
+            <div class="w3-half w3-row"style="width:25%"><img src="maruStardew.png" alt=""></div>
+            <div class="w3-half w3-row"tyle="width:75%">Maru é uma das aldeãs que moram na Montanha e uma dos doze personagens disponíveis para casar.
+
+                Ela mora no norte da cidade com sua família em uma casa anexada a carpintaria da Robin.
+                
+                No menu Social (de Amizades), a roupa da Maru vai mudar para um uniforme de enfermeira quando ela estiver trabalhando na Clínica do Harvey</div>
+                <h1>.</h1>
+                <h1>.</h1>
+                <h2>Feiticeiro:</h2>
+                <div class="w3-half w3-row"style="width:25%"><img src="magoStardew.png" alt=""></div>
+                <div class="w3-half w3-row"tyle="width:75%">O Feiticeiro, também conhecido como M. Rasmodeu, é um aldeão que mora na Torre do mago no extremo oeste da Floresta Cinzaseiva. O feiticeiro não sai da Torre do mago (exceto para festivais), e pode ser encontrado lá quando a torre é acessível (6:00 às 23:00 ou, qualquer Horário, se tiver a Chave da Vila)
+
+                    .</div>
+                <h1>.</h1>
+                <h1>.</h1>
+                <h2>Robin:</h2>
+                <div class="w3-half w3-row"style="width:25%"><img src="robinStardew.png" alt=""></div>
+                <div class="w3-half w3-row"tyle="width:75%">Robin é um dos aldeões de Stardew Valley. Ela mora em Rua da Montanha, nº 24, na Montanha, com seu marido Demetrius, filha Maru, e filho Sebastian. Robin é casada com Demetrius e mora com sua filha Maru e filho Sebastian. Maru é sua filha com Demetrius, e Sebastian é de outro relacionamento anterior. Supõe-se que Demetrius é o segundo marido de Robin.</div>
+            <br>
+            <!--fim dos personagens--> 
+            <!--inicio das areas-->
+            <h1>.</h1>
+            <h1>.</h1>
+            <h3 id="locais"class="w3-serif"style="text-shadow:1px 1px 0 #444 ; font-size:40px">Locais:</h3>
+            <table class="w3-table-all">
+                <tr>
+                    <th style="background-color: green; width:33%;">nome</th>
+                    <th style="background-color: green;width:33%;">mapa</th>
+                    <th style="background-color: green;width:33%;">descrição</th>
+                  </tr>
+                  <tr>
+                    <td><img style="width:25% ;" src="fazendaPadrao.png" alt="">Fazenda Padrão</td>
+                    <td><img style="width:50%;" src="fazendaPadrao2.png" alt=""></td>
+                    <td style="width:25%; ">A maioria deste mapa é terra de Cultivo, ideal para Lavouras e Animais.</td>
+                    
+                  </tr>
+                  <tr>
+                    <td><img style="width:25% ;" src="fazendoRiachos.png" alt="">Fazenda entre Riachos</td>
+                    <td><img style="width:50%;" src="fazendaRiachos2.png" alt=""></td>
+                    <td style="width:25%; ">A maioria deste mapa é água. A Pesca é viável nesta fazenda.</td>
+                    
+                  </tr>
+                  <tr>
+                    <td><img style="width:25% ;" src="fazendaFloresta.png" alt="">Fazenda na Floresta</td>
+                    <td><img style="width:50%;" src="fazendaFloresta2.png" alt=""></td>
+                    <td style="width:25%; ">Muitas Árvores são encontradas em todo o mapa.</td>
+                    
+                  </tr>
+                  <tr>
+                    <td><img style="width:25% ;" src="fazendaPraia.png" alt="">Fazenda na Praia</td>
+                    <td><img style="width:50%;" src="fazendaPraia2.png" alt=""></td>
+                    <td style="width:25%; ">Boas coletas e pesca, muito espaço aberto. Algumas vezes caixas de suprimentos aparecem na areia.</td>
+                    
+                  </tr>
+                  <tr>
+                    <td><img style="width:25% ;" src="fazendaNoite.png" alt="">Fazenda Remota</td>
+                    <td><img style="width:50%;" src="fazendaNoite2.png" alt=""></td>
+                    <td style="width:25%; ">Monstros aparecem à noite (escalas com nível de Combate do jogador).
+                        Golem selvagem é exclusivo deste mapa.</td>
+                    
+                  </tr>
+                    
+            </table>
+            <!--fim das areas-->
+            <!--inicio dos inimigos-->
+            <h3 id="inimigos"class="w3-serif"style="text-shadow:1px 1px 0 #444 ; font-size:40px">inimigos:</h3>
+            <div class="w3-row w3-third"style="width:33%;border:1px solid black"><center><img class="" src="gosmaStardew.gif" alt=""></center>
+            <h2 class="w3-card w3-center">gosma</h2>
+            <p>Gosmas são inimigos que podem ser encontrados em vários locais. Eles vêm em cinco variações diferentes, todas baseadas no mesmo sprite e código </p>
+            
+        </div>
+            <div class="w3-row w3-third"style="width:33%;border:1px solid black"><center><img class="" src="golemStardew.gif" alt=""></center>
+            <h2 class="w3-card w3-center">golem Selvagem</h2>
+            <p>Golens Selvagens são únicos inimigos encontrados nas fazendas à noite, se o jogador selecionar a Fazenda Remota como seu layout de fazenda.</p>
+        
+        </div>
+            <div class="w3-row w3-third"style="width:33%;border:1px solid black"><center><img class="" src="caveiraStardew.gif" alt=""></center>
+            <h2 class="w3-card w3-center">Caveira Assombrada</h2>
+            <p>Caveira Assombrada é um inimigo voador encontrado na Mina da pedreira e nos andares de masmorra das minas.</p>
+        
+        </div>
+            <!--fim dos inimigos-->
+
+
+    </div>   
+</main>
+</body>
+</html>
